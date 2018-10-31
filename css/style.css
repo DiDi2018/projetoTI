@@ -25,12 +25,11 @@ header {
 
 #Logo > p {
     position: absolute;
-    top: 65px;
-    left: 40%;
+    top: 70px;
+    left: 30%;
     color: black;
-    
-
 }
+
 header > nav > ul {
     background-color: cornflowerblue;
 }
@@ -59,7 +58,7 @@ header > nav > ul :hover {
     width: calc(100% / 3.1);
 }
 
-/*main{
-    position: initial;
-    transform: translateY(100px);
-}*/
+body:not(.header){
+    position: absolute;
+    top: 200px;
+}
