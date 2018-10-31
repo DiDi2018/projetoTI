@@ -17,24 +17,25 @@ header {
 #Logo {
     height: 133px;
     width: 100%;
-    position: relative;
-    top: 0;
-    left: 0;
     display: inline-block;
 }
 
 #Logo > p {
     position: absolute;
-    top: 70px;
-    left: 30%;
+    top: 0px;
+    left: 20%;
     color: black;
+    font-family: "Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
+    font-size: 3em;
 }
 
-header > nav > ul {
+/*header > nav > ul {
     background-color: cornflowerblue;
 }
+*/
 
 header > nav > ul > li {
+    background-color: cornflowerblue;
     display: inline-block;
     text-decoration: none;
     color: white;
@@ -49,7 +50,7 @@ header > nav > ul > li > a {
     color: white;
 }
 
-header > nav > ul > li > ul {
+header > nav > ul > li > ul {    /*dentro das adoçoes*/
     display: none;
 }
 
