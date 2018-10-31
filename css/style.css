@@ -29,10 +29,12 @@ header {
     font-size: 3em;
 }
 
-/*header > nav > ul {
-    background-color: cornflowerblue;
+header > nav > ul {
+    width: 100%;
+    position: relative;
+    left: -31px;
 }
-*/
+
 
 header > nav > ul > li {
     background-color: cornflowerblue;
