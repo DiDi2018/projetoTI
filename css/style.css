@@ -22,7 +22,7 @@ header {
 
 #Logo > p {
     position: absolute;
-    top: 0px;
+    top: 0;
     left: 265px;
     color: black;
     font-family: "Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
