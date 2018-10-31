@@ -38,7 +38,7 @@ header > nav > ul > li {
     display: inline-block;
     text-decoration: none;
     color: white;
-    width: calc(100% / 3.1);
+    width: calc(100% / 3);
     text-align: center;
     height: 2em;
     line-height: 2em;
@@ -52,10 +52,11 @@ header > nav > ul > li > a {
 header > nav > ul > li > ul {
     display: none;
 }
+
 header > nav > ul :hover {
     display: inline-block;
     background-color: cadetblue;
-    width: calc(100% / 3.1);
+    width: calc(100% / 3);
 }
 
 body:not(.header){
