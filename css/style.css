@@ -1,11 +1,36 @@
+html{
+    background-color: beige;
+}
 header {
     position: fixed;
     top: 0;
     left: 0;
-    height: 200px;
+    height: 195px;
     width: 100%;
     background-color: white;
     z-index: 500;
+}
+footer {
+    background-color: cadetblue;
+    height: 200px;
+}
+
+footer > div {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align:  center;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-decoration-color: white;
+}
+
+footer a {
+    color: white;
+}
+
+hr {
+    margin-bottom: 0;
 }
 
 #RedesSociais {
@@ -22,12 +47,14 @@ header {
 }
 
 #Logo > p {
-    position: absolute;
-    top: 0;
+    position: relative;
     left: 265px;
     color: black;
-    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
-    font-size: 3em;
+    font-family: 'Poppins', sans-serif;
+    top: -90%;
+    transform: translateY(-50%);
+    font-size: 3.5em;
+
 }
 
 header > nav > ul {
@@ -37,7 +64,7 @@ header > nav > ul {
 }
 
 header > nav > ul > li {
-    background-color: cornflowerblue;
+    background-color: darkseagreen;
     display: inline-block;
     text-decoration: none;
     color: white;
@@ -45,7 +72,10 @@ header > nav > ul > li {
     text-align: center;
     height: 2em;
     line-height: 2em;
-}
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5em;
+
+    }
 
 header > nav > ul > li > a {
     text-decoration: none;
@@ -63,7 +93,7 @@ header > nav > ul :hover {
 }
 
 .titulo {
-    font-family: "azo-sans-web", sans-serif;
+    font-family: 'Poppins', sans-serif;
     width: 300px;
     margin-left: auto;
     margin-right: auto;
@@ -75,6 +105,7 @@ header > nav > ul :hover {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    font-family: 'Poppins', sans-serif;
 }
 
 video {
@@ -100,7 +131,7 @@ video {
 
 body:not(.header) {
     position: absolute;
-    top: 200px;
+    top: 189px;
     width: 100%;
 
 }
@@ -113,12 +144,13 @@ body:not(.header) {
     position: relative;
 }
 .textoeventos{
-    margin: 10px;
+    margin: 30px;
     display: inline-block;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    font-family: "Gill Sans Extrabold", sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
 }
 
 body {
@@ -130,6 +162,9 @@ body {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+    font-family: 'Poppins', sans-serif;
+    width: 60%;
+
 }
 .ajudar>img{
     display: inline-block;
