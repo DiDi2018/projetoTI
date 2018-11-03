@@ -223,11 +223,11 @@ body:not(.header) {
 }
 
 [class*='col2d']{
-    background: lightblue;
+    background: darkseagreen;
 }
 
 [class*='col2e']{
-    background: lightgray;
+    background: cadetblue;
 }
 
 .row2 .empty{
@@ -239,6 +239,7 @@ body:not(.header) {
     width: 100%;
     box-sizing: border-box;
     margin-left: calc((100% - (432px * 2) - 20%) / 2);
+    margin-top: 3%;
 }
 
 .col {
