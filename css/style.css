@@ -91,10 +91,11 @@ header > nav > ul :hover {
 }
 
 .texto {
-    width: 100%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    font-family: 'Poppins', sans-serif;
 }
 
 video {
