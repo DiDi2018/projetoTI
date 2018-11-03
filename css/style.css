@@ -33,6 +33,26 @@ hr {
     margin-bottom: 0;
 }
 
+body {
+    left: -8px;
+}
+
+hr {
+    margin-bottom: 0;
+}
+
+footer {
+    background-color: darkgrey;
+    height: 200px;
+}
+
+footer > div {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align:  center;
+}
+
 #RedesSociais {
     position: absolute;
     display: inline-block;
@@ -100,11 +120,12 @@ header > nav > ul :hover {
     text-align: center;
 }
 
+
 .imageminicial{
     width: 100%;
 }
 
-.texto{
+.texto {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
@@ -130,15 +151,14 @@ video {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-
 }
 
 body:not(.header) {
     position: absolute;
     top: 189px;
     width: 100%;
-
 }
+
 
 .imagemetexto{
     position: relative;
@@ -155,10 +175,6 @@ body:not(.header) {
     transform: translateY(-50%);
     font-family: 'Poppins', sans-serif;
     font-size: 1.2em;
-}
-
-body {
-    left: -8px;
 }
 
 .ajudar>p{
@@ -184,9 +200,8 @@ body {
 }
 .nomeanimal{
     margin-left: 20px;
-
-
 }
+
 .grid2 {
     width: 50%;
     margin:auto;
@@ -217,4 +232,30 @@ body {
 
 .row2 .empty{
     height:20px;
+}
+
+.grid {
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    margin-left: calc((100% - (432px * 2) - 20%) / 2);
+}
+
+.col {
+    float: left;
+    width: 432px;
+    padding: 0 5%;
+    text-align: center;
+}
+
+.col > a > h2 {
+    text-align: left;
+}
+
+.row {
+    clear: both;
+}
+
+.row.empty {
+    height: 20px;
 }
