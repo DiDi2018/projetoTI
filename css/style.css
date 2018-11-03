@@ -88,7 +88,7 @@ video {
 
 .data {
     position: absolute;
-    right: 0;
+    right: 10px;
     top: -0.75em;
 }
 
@@ -96,15 +96,38 @@ video {
     position: relative;
 }
 
-
 body:not(.header) {
     position: absolute;
     top: 200px;
     width: 100%;
 }
 
+.imagemetexto{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+
+
+}
 .imagemeventos{
+    display: inline-block;
+    position: relative;
+}
+.textoeventos{
+    display: inline-block;
     position: absolute;
-    right: 0;
-    top: -0.75em;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: "Gill Sans Extrabold", sans-serif;
+
+
+
+}
+
+body {
+    left: -8px;
+}
+.imageminicial{
+    width: 100%;
 }
