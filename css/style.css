@@ -5,6 +5,7 @@ header {
     height: 200px;
     width: 100%;
     background-color: white;
+    z-index: 500;
 }
 
 #RedesSociais {
@@ -25,7 +26,7 @@ header {
     top: 0;
     left: 265px;
     color: black;
-    font-family: "Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
+    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
     font-size: 3em;
 }
 
@@ -34,7 +35,6 @@ header > nav > ul {
     position: relative;
     left: -31px;
 }
-
 
 header > nav > ul > li {
     background-color: cornflowerblue;
@@ -52,7 +52,7 @@ header > nav > ul > li > a {
     color: white;
 }
 
-header > nav > ul > li > ul {    /*dentro das adoçoes*/
+header > nav > ul > li > ul { /*dentro das adoçoes*/
     display: none;
 }
 
@@ -60,11 +60,6 @@ header > nav > ul :hover {
     display: inline-block;
     background-color: cadetblue;
     width: calc(100% / 3);
-}
-
-body:not(.header){
-    position: absolute;
-    top: 200px;
 }
 
 .titulo {
@@ -84,13 +79,32 @@ body:not(.header){
     text-align: center;
 }
 
-video{
+video {
     display: block;
     width: 640px;
     margin-left: auto;
     margin-right: auto;
 }
 
-main {
+.data {
+    position: absolute;
+    right: 0;
+    top: -0.75em;
+}
+
+.d{
+    position: relative;
+}
+
+
+body:not(.header) {
+    position: absolute;
+    top: 200px;
     width: 100%;
+}
+
+.imagemeventos{
+    position: absolute;
+    right: 0;
+    top: -0.75em;
 }
