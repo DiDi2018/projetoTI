@@ -1,11 +1,36 @@
+html{
+    background-color: beige;
+}
 header {
     position: fixed;
     top: 0;
     left: 0;
-    height: 200px;
+    height: 195px;
     width: 100%;
     background-color: white;
     z-index: 500;
+}
+footer {
+    background-color: cadetblue;
+    height: 200px;
+}
+
+footer > div {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align:  center;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-decoration-color: white;
+}
+
+footer a {
+    color: white;
+}
+
+hr {
+    margin-bottom: 0;
 }
 
 body {
@@ -38,16 +63,18 @@ footer > div {
 #Logo {
     height: 133px;
     width: 100%;
-    display: inline-block;
+
 }
 
 #Logo > p {
-    position: absolute;
-    top: 0;
+    position: relative;
     left: 265px;
     color: black;
-    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
-    font-size: 3em;
+    font-family: 'Poppins', sans-serif;
+    top: -90%;
+    transform: translateY(-50%);
+    font-size: 3.5em;
+
 }
 
 header > nav > ul {
@@ -57,7 +84,7 @@ header > nav > ul {
 }
 
 header > nav > ul > li {
-    background-color: cornflowerblue;
+    background-color: darkseagreen;
     display: inline-block;
     text-decoration: none;
     color: white;
@@ -65,7 +92,10 @@ header > nav > ul > li {
     text-align: center;
     height: 2em;
     line-height: 2em;
-}
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5em;
+
+    }
 
 header > nav > ul > li > a {
     text-decoration: none;
@@ -83,11 +113,16 @@ header > nav > ul :hover {
 }
 
 .titulo {
-    font-family: "azo-sans-web", sans-serif;
+    font-family: 'Poppins', sans-serif;
     width: 300px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+}
+
+
+.imageminicial{
+    width: 100%;
 }
 
 .texto {
@@ -107,61 +142,96 @@ video {
 
 .data {
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 10px;
+    top: -0.75em;
 }
 
 .d{
     position: relative;
-    display: inline-block;
-    width: 90%;
-    left: 5%;
-}
-
-.d > p{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.d:nth-child(1) > p{
-    left: 380px;
-    width: calc(100% - 380px);
-}
-
-.d:nth-child(2) > p , .d:nth-child(3) > p , .d:nth-child(4) > p{
-    left: 490px;
-    width: calc(100% - 490px);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 body:not(.header) {
     position: absolute;
-    top: 200px;
+    top: 189px;
     width: 100%;
 }
 
-.imageminicial {
-    width: 100%;
-}
 
-.ajudar {
+.imagemetexto{
     position: relative;
-    width: 80%;
-    left: 10%;
-    height: 272px;
 }
-
-.ajudar > p {
+.imagemeventos{
+    display: inline-block;
+    position: relative;
+}
+.textoeventos{
+    margin: 30px;
+    display: inline-block;
     position: absolute;
-    width: calc(100% - 370px);
     top: 50%;
     transform: translateY(-50%);
-    text-align: right;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
 }
 
-.ajudar > img {
+.ajudar>p{
+    display: inline-block;
     position: relative;
-    left: calc(100% - 362px);
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: 'Poppins', sans-serif;
+    width: 60%;
+
+}
+.ajudar>img{
+    display: inline-block;
+    position: absolute;
+}
+.ajudar{
+    height: 272px;
+    position: relative;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+.nomeanimal{
+    margin-left: 20px;
+}
+
+.grid2 {
+    width: 50%;
+    margin:auto;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.row2 {
+    clear: both;
+}
+
+[class*='col2'] {
+    float: left;
+    width: 50%; /*calc(100% * 60 / 940);*/
+}
+
+[class*='col2']:first-child {
+    margin-left: 0;
+}
+
+[class*='col2d']{
+    background: lightblue;
+}
+
+[class*='col2e']{
+    background: lightgray;
+}
+
+.row2 .empty{
+    height:20px;
 }
 
 .grid {
@@ -180,9 +250,6 @@ body:not(.header) {
 
 .col > a > h2 {
     text-align: left;
-}
-
-.col:nth-child(2), .col:nth-child(4), .col:nth-child(6), .col:nth-child(8) {
 }
 
 .row {
