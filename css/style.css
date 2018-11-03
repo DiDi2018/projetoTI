@@ -8,6 +8,26 @@ header {
     z-index: 500;
 }
 
+body {
+    left: -8px;
+}
+
+hr {
+    margin-bottom: 0;
+}
+
+footer {
+    background-color: darkgrey;
+    height: 200px;
+}
+
+footer > div {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align:  center;
+}
+
 #RedesSociais {
     position: absolute;
     display: inline-block;
@@ -33,7 +53,7 @@ header {
 header > nav > ul {
     width: 100%;
     position: relative;
-    left: -31px;
+    float: right;
 }
 
 header > nav > ul > li {
@@ -63,7 +83,6 @@ header > nav > ul :hover {
 }
 
 .titulo {
-    display: block;
     font-family: "azo-sans-web", sans-serif;
     width: 300px;
     margin-left: auto;
@@ -72,7 +91,6 @@ header > nav > ul :hover {
 }
 
 .texto {
-    display: block;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -89,13 +107,31 @@ video {
 .data {
     position: absolute;
     right: 0;
-    top: -0.75em;
+    top: 0;
 }
 
 .d{
     position: relative;
+    display: inline-block;
+    width: 90%;
+    left: 5%;
 }
 
+.d > p{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.d:nth-child(1) > p{
+    left: 380px;
+    width: calc(100% - 380px);
+}
+
+.d:nth-child(2) > p , .d:nth-child(3) > p , .d:nth-child(4) > p{
+    left: 490px;
+    width: calc(100% - 490px);
+}
 
 body:not(.header) {
     position: absolute;
@@ -103,8 +139,55 @@ body:not(.header) {
     width: 100%;
 }
 
-.imagemeventos{
+.imageminicial {
+    width: 100%;
+}
+
+.ajudar {
+    position: relative;
+    width: 80%;
+    left: 10%;
+    height: 272px;
+}
+
+.ajudar > p {
     position: absolute;
-    right: 0;
-    top: -0.75em;
+    width: calc(100% - 370px);
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: right;
+}
+
+.ajudar > img {
+    position: relative;
+    left: calc(100% - 362px);
+}
+
+.grid {
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    margin-left: calc((100% - (432px * 2) - 20%) / 2);
+}
+
+.col {
+    float: left;
+    width: 432px;
+    padding: 0 5%;
+    text-align: center;
+}
+
+.col > a > h2 {
+    text-align: left;
+}
+
+.col:nth-child(2), .col:nth-child(4), .col:nth-child(6), .col:nth-child(8) {
+}
+
+.row {
+    clear: both;
+}
+
+.row.empty {
+    height: 20px;
 }
