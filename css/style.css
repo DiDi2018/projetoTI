@@ -110,18 +110,66 @@ header > nav > ul :hover {
     font-size: 1.1em;
 }
 
+@media (min-width: 320px) {
+    video {
+        width: 320px;
+        height: 180px;
+    }
+}
+
+@media (min-width: 480px){
+    video{
+        width: 480px;
+        height: 270px;
+    }
+}
+
+@media (min-width: 640px) {
+    video {
+        width: 640px;
+        height: 360px;
+    }
+}
+
 video {
     display: block;
-    width: 640px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 3%;
 }
 
+@media (min-width: 360px) {
+    .data {
+        position: relative;
+        right: 0;
+    }
+}
+
+@media (max-width: 799px){
+    .d:first-child > .eventos > img {
+        margin-right: calc(50% - (369px / 2));
+        margin-left: calc(50% - (369px / 2));
+    }
+
+    .d > .eventos > img {
+        margin-right: calc(50% - (480px / 2));
+        margin-left: calc(50% - (480px / 2));
+    }
+
+    .d > .eventos > p {
+        text-align: center;
+    }
+}
+
+@media (min-width: 710px){
+    .data {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}
+
 .data {
-    position: absolute;
-    right: 0;
-    top: 0;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -142,9 +190,13 @@ video {
     font-size: 1.2em;
 }
 
-.d > .eventos > img {
-    float: left;
+@media (min-width: 800px){
+    .d > .eventos > img {
+        float: left;
+        margin: initial;
+    }
 }
+
 
 body:not(.header) {
     position: absolute;
