@@ -30,7 +30,6 @@ hr {
 
 body {
     margin: 0;
-    background-color: white;
     width: 100%;
 }
 
@@ -140,6 +139,10 @@ header > nav > ul > li > a {
     color: black;
 }
 
+header > nav > ul > li > a:active {
+    color: white;
+}
+
 header > nav > ul > li > ul {
     margin-bottom: 0;
     font-family: 'Poppins', sans-serif;
@@ -178,6 +181,10 @@ header > nav > ul > li > ul:hover {
     width: 100%;
 }
 
+header > nav > ul > li > ul > li > a:active {
+    color: white;
+}
+
 .titulo {
     font-family: 'Poppins', sans-serif;
     margin: 0 auto;
@@ -195,16 +202,18 @@ header > nav > ul > li > ul:hover {
     font-family: 'Poppins', sans-serif;
     margin: 3% auto 0 auto;
     font-size: 1.1em;
-   /* padding-bottom: 4%;*/
+    padding-bottom: 4%;
 }
 
 .oquefazemos {
     background-color: white;
-    padding: 4%;
+    padding-top: 4%;
+    padding-bottom: 0;
 }
 
 .quemsomos {
-    padding: 4%;
+    padding-top: 4%;
+    padding-bottom: 0;
 }
 
 @media (min-width: 320px) {
@@ -276,6 +285,7 @@ video {
     width: 90%;
     left: 5%;
     margin-top: 2%;
+    margin-bottom: 2%;
 }
 
 .d > h2 {
